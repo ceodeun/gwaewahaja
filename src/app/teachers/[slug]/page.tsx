@@ -178,7 +178,7 @@ export default function TeacherProfile() {
               <div key={item.label} style={{ background:'#fff', borderRadius:14, padding:14, marginBottom:10, border:`1px solid ${BD}` }}>
                 <div style={{ fontSize:11, color:HINT, fontWeight:700, marginBottom:8 }}>{item.label}</div>
                 <div style={{ display:'flex', gap:6, flexWrap:'wrap' }}>
-                  {item.content.map(c=>(
+                  {item.content.map((c:string)=>(
                     <span key={c} style={{ fontSize:12, padding:'4px 11px', borderRadius:999, background:CL, color:SUB, border:`1px solid ${BD}`, fontWeight:600 }}>{c}</span>
                   ))}
                 </div>
